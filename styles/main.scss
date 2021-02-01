@@ -1,0 +1,18 @@
+//Abstracts
+@import './abstracts/functions.scss';
+@import './abstracts/mixins.scss';
+@import './abstracts/variables.scss';
+
+//Base
+@import './base/animations.scss';
+@import './base/base.scss';
+@import './base/grid.scss';
+@import './base/typography.scss';
+@import './base/utilities.scss';
+
+//Components
+
+//Pages
+@import './pages/index.scss';
+@import './pages/login.scss';
+@import './pages/new-account.scss';
