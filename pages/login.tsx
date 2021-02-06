@@ -1,9 +1,9 @@
-
+import Layout from '../components/Layout';
 
 export default function Login() {
   return (
-    <div>
-      <h1>Login</h1>
-    </div>
+    <Layout>
+      <h1 className="prueba">Login</h1>
+    </Layout>
   )
 }

@@ -1,9 +1,9 @@
-import React from 'react';
+import Layout from '../components/Layout';
 
 export default function NewAccount() {
   return (
-    <div>
-      <h1>New Account</h1>
-    </div>
+    <Layout>
+      <h1 className="prueba">New account</h1>
+    </Layout>
   )
 }

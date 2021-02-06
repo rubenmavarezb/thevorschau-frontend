@@ -1,9 +1,9 @@
-
+import Layout from '../components/Layout';
 
 export default function Categories() {
-    return (
-      <div>
-        <h1>Categories</h1>
-      </div>
-    )
-  }
+  return (
+    <Layout>
+      <h1 className="prueba">Categories</h1>
+    </Layout>
+  )
+}

@@ -1,9 +1,9 @@
-
+import Layout from '../../components/Layout';
 
 export default function Detail() {
-    return (
-      <div>
-        <h1>Detail</h1>
-      </div>
-    )
+  return (
+    <Layout>
+      <h1 className="prueba">Detail</h1>
+    </Layout>
+  )
 }
