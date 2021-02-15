@@ -15,27 +15,27 @@ export default function Footer() {
     {
       id: 1,
       category: 'Men',
-      href: '/login'
+      href: '/category/men'
     },
     {
       id: 2,
       category: 'Women',
-      href: '/login'
+      href: '/category/women'
     },
     {
       id: 3,
       category: 'Shoes',
-      href: '/login'
+      href: '/category/shoes'
     },
     {
       id: 4,
       category: 'Denim',
-      href: '/login'
+      href: '/category/denim'
     },
     {
       id: 5,
       category: 'Accesories',
-      href: '/login'
+      href: '/category/accesories'
     },
   ]
 
