@@ -7,11 +7,11 @@
     justify-content: center;
     padding: 43px 31px 50px 54px;
 
-    .icono {
+    &__icon {
         color: $grey-1;
     }
 
-    .footer__container {
+    &__container {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -28,20 +28,17 @@
             color: $grey-1;
         }
 
-        .footer__container__items {
+        &__items {
             flex: 0 0 calc(33.33% - 0rem);
             display: flex;
             flex-direction: column;
-            h2 {
+            h2:not(.v) {
                 font-size: 40px;
+                font-weight: 400;
                 margin: 0 0 24px 0;
             }
-            
-            h2 span{
-                color: red;
-            }
 
-            .items__contact {
+            &--contact {
                 display: flex;
                 align-items: center;
                 margin: 0 0 24px 0;
@@ -59,7 +56,7 @@
                     line-height: 1.2;
                 }
 
-                .icono {
+                &-icon {
                     font-size: 39px;
                     margin-right: 26px;
                 }
@@ -71,7 +68,7 @@
                 
             }
 
-            .items__categories {
+            &--categories {
                 ul {
                     list-style: none;
                     padding: 0;
@@ -120,7 +117,7 @@
                 margin-top: 9px;
             }
 
-            .text--form {
+            &--text-form {
                 line-height: 1.2;
                 margin-top: 25px;
                 margin-bottom: 41px;
@@ -132,10 +129,10 @@
         
     }
 
-    .icon {
+    &__icons {
         margin-top: 30px;
 
-        .icono {
+        &--icon {
             cursor: pointer;
             font-size: 28px;
             margin-right: 27px;

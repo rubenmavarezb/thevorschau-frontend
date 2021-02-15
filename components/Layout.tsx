@@ -11,6 +11,8 @@ export default function Layout({children}: Children) {
       <>
         <Head>
           <title>The Vorschau | Clothes for everyone </title>
+          <link rel="preconnect" href="https://fonts.gstatic.com"/>
+          <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;600&family=Ramabhadra&display=swap" rel="stylesheet"/>
         </Head>
 
         <Navbar/>
