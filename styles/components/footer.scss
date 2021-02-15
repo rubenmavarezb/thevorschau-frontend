@@ -60,7 +60,7 @@
                 }
 
                 .icono {
-                    font-size: 27px;
+                    font-size: 39px;
                     margin-right: 26px;
                 }
 
@@ -119,15 +119,26 @@
             &:nth-child(1) {
                 margin-top: 9px;
             }
+
+            .text--form {
+                line-height: 1.2;
+                margin-top: 25px;
+                margin-bottom: 41px;
+            }
+
+            
         }
+        
         
     }
 
-    .icon .icono {
-        cursor: pointer;
-        font-size: 28px;
-        margin-right: 27px;
-    }
+    .icon {
+        margin-top: 30px;
 
-    
+        .icono {
+            cursor: pointer;
+            font-size: 28px;
+            margin-right: 27px;
+        }
+    }
 }
