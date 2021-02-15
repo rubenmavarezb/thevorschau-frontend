@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faUser, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import {FaFacebookF, FaInstagram, FaTwitter, FaPinterestP, FaPhone} from 'react-icons/fa';
 
 interface FooterCategories {
   id: number;
@@ -77,10 +78,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="icon">
-            <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} /></Link>
-            <Link href="/login"><FontAwesomeIcon className="icono" icon={faHeart} /></Link>
-            <Link href="/login"><FontAwesomeIcon className="icono" icon={faShoppingCart} /></Link>
-            <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} /></Link>
+            <FaFacebookF className="icono"/> 
+            <FaInstagram className="icono"/>
+            <FaTwitter className="icono"/>
+            <FaPinterestP className="icono"/>
         </div>
       </footer>
     )
