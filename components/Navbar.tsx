@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faUser, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { IconDefinition } from '@fortawesome/fontawesome-common-types'
+import { IconType } from 'react-icons'
+import { FaSearch, FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa';
 
 interface NavLinks {
   id:number
-  icon: IconDefinition;
-  href: string;
+  icon: IconType;
+  link: string;
 }
 
 export default function Navbar() {
@@ -14,18 +13,18 @@ export default function Navbar() {
     const navLinks: NavLinks[] = [
       {
         id: 1,
-        icon: faUser,
-        href: '/login'
+        icon: FaUser,
+        link: '/login'
       },
       {
         id: 2,
-        icon: faHeart,
-        href: '/login'
+        icon: FaHeart,
+        link: '/favorites'
       },
       {
         id: 3,
-        icon: faShoppingCart,
-        href: '/login'
+        icon: FaShoppingCart,
+        link: '/cart'
       },
     ]
 
@@ -36,9 +35,9 @@ export default function Navbar() {
           </div>
           <a href="" className="navbar__title">VORSHAU</a>
           <nav className="navbar__nav">
-            <FontAwesomeIcon icon={faSearch} size="2x"/>
+            <span className="navbar__icons"><FaSearch/></span>
             {navLinks.map((link:NavLinks) => (
-              <Link key={link.id} href={link.href}><FontAwesomeIcon icon={link.icon} size="2x"/></Link>
+              <Link key={link.id} href={link.link}><span className="navbar__icons"><link.icon/></span></Link>
             ))}
           </nav>
       </div>
