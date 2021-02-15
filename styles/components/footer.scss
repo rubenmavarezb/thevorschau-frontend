@@ -1,0 +1,113 @@
+footer {
+    background-color: $light-blue;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 43px 31px 50px 54px;
+
+    .icono {
+        color: $grey-1;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 24px;
+
+        h3 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 24px;
+            color: $grey-1;
+        }
+
+        .footer__container__items {
+            flex: 0 0 calc(33.33% - 0rem);
+            display: flex;
+            flex-direction: column;
+            h2 {
+                font-size: 40px;
+                margin: 0 0 41px 0;
+            }
+            
+            h2 span{
+                color: red;
+            }
+
+            .items__contact {
+                display: flex;
+                align-items: baseline;
+
+                p{
+                    margin: 0 0 37px 0;
+                }
+
+                .icono {
+                    font-size: 27px;
+                    margin-right: 26px;
+                }
+            }
+
+            .items__categories {
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li a {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        color: $grey-1;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            form {
+                position: relative;
+
+                .btn__footer {
+                    position: absolute;
+                    right: 2%;
+                    top: 10%;
+                    bottom: 0;
+                    width: 214px;
+                    height: 68px;
+                    border-radius: 0;
+                }
+
+                input {
+                    display: block;
+                    width: 492px;
+                    height: 88px;
+                    background-color: transparent;
+                    border: 1px solid $grey-1;
+                    font-size: 24px;
+                }
+
+                #name {
+                    padding: 25px;
+                }
+                
+            }
+
+            
+
+        }
+    }
+
+    .icon .icono {
+        cursor: pointer;
+        font-size: 28px;
+        margin-right: 27px;
+    }
+
+    
+}
