@@ -50,7 +50,7 @@ export default function Footer() {
               </div>
               <div className="items__contact">
                 <FontAwesomeIcon className="icono" icon={faUser} />
-                <a href="mailto:">contact@vorshau.com</a>
+                <a href="mailto:">cthevorschau@gmail.com</a>
               </div>
               <div className="items__contact">
                 <FontAwesomeIcon className="icono" icon={faUser} />
