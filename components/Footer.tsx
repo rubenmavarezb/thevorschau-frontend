@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faUser, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import {FaFacebookF, FaInstagram, FaTwitter, FaPinterestP, FaPhone} from 'react-icons/fa';
+import {FaFacebookF, FaInstagram, FaTwitter, FaPinterestP, FaPhone, FaMailchimp} from 'react-icons/fa';
+import { HiMail } from "react-icons/hi";
+import { MdLocationOn } from "react-icons/md";
 
 interface FooterCategories {
   id: number;
@@ -41,21 +41,21 @@ export default function Footer() {
 
 
     return (
-      <footer>
+      <footer className="footer">
         <div className="footer__container">
           <div className="footer__container__items">
               <h2><span>V</span>ORSHAU</h2>
               <div className="items__contact">
-                <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} size="2x"/></Link>
-                <p>345 Main Road, Florida, United States</p>
+                <MdLocationOn className="icono"/>
+                <address>345 Main Road, Florida,<br /> United States</address>
               </div>
               <div className="items__contact">
-                <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} size="2x"/></Link>
-                <p>contact@vorshau.com</p>
+                <HiMail className="icono" />
+                <a href="mailto:">cthevorschau@gmail.com</a>
               </div>
               <div className="items__contact">
-                <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} size="2x"/></Link>
-                <p>+001-2233-456</p>
+                <FaPhone className="icono" />
+                <a href="tel:+">001-2233-456</a>
               </div>
           </div>
           <div className="footer__container__items">
@@ -70,10 +70,10 @@ export default function Footer() {
           </div>
           <div className="footer__container__items">
             <h3>Newsletter Signup</h3>
-            <p>Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers</p>
+            <p className="text--form">Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers</p>
             <form>
-            <input type="text" id="name" name="name" placeholder="Your email address"></input>
-            <button className="btn btn__footer">Suscribete</button>
+              <input type="text" id="name" name="name" placeholder="Your email address"></input>
+              <button className="btn btn__footer">Suscribete</button>
             </form>
           </div>
         </div>

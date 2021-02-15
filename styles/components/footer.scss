@@ -1,4 +1,4 @@
-footer {
+.footer {
     background-color: $light-blue;
     width: 100%;
     height: 460px;
@@ -34,7 +34,7 @@ footer {
             flex-direction: column;
             h2 {
                 font-size: 40px;
-                margin: 0 0 41px 0;
+                margin: 0 0 24px 0;
             }
             
             h2 span{
@@ -43,16 +43,32 @@ footer {
 
             .items__contact {
                 display: flex;
-                align-items: baseline;
+                align-items: center;
+                margin: 0 0 24px 0;
 
-                p{
-                    margin: 0 0 37px 0;
+                a{
+                    font-size: 24px;
+                    color: $grey-1;
+                    text-decoration: none;
+                }
+                
+                address {
+                    font-size: 24px;
+                    color: $grey-1;
+                    text-decoration: none;
+                    line-height: 1.2;
                 }
 
                 .icono {
-                    font-size: 27px;
+                    font-size: 39px;
                     margin-right: 26px;
                 }
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                
             }
 
             .items__categories {
@@ -72,6 +88,8 @@ footer {
 
             form {
                 position: relative;
+                width: 492px;
+                height: 88px;
 
                 .btn__footer {
                     position: absolute;
@@ -98,16 +116,29 @@ footer {
                 
             }
 
-            
+            &:nth-child(1) {
+                margin-top: 9px;
+            }
 
+            .text--form {
+                line-height: 1.2;
+                margin-top: 25px;
+                margin-bottom: 41px;
+            }
+
+            
+        }
+        
+        
+    }
+
+    .icon {
+        margin-top: 30px;
+
+        .icono {
+            cursor: pointer;
+            font-size: 28px;
+            margin-right: 27px;
         }
     }
-
-    .icon .icono {
-        cursor: pointer;
-        font-size: 28px;
-        margin-right: 27px;
-    }
-
-    
 }
