@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {FaFacebookF, FaInstagram, FaTwitter, FaPinterestP, FaPhone, FaMailchimp} from 'react-icons/fa';
+import {FaFacebookF, FaInstagram, FaTwitter, FaPinterestP, FaPhone} from 'react-icons/fa';
 import { HiMail } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
 
@@ -44,22 +44,22 @@ export default function Footer() {
       <footer className="footer">
         <div className="footer__container">
           <div className="footer__container__items">
-              <h2><span>V</span>ORSHAU</h2>
-              <div className="items__contact">
-                <MdLocationOn className="icono"/>
+              <h2><span className="v">V</span>ORSCHAU</h2>
+              <div className="footer__container__items--contact">
+                <MdLocationOn className="footer__container__items--contact-icon footer__icon"/>
                 <address>345 Main Road, Florida,<br /> United States</address>
               </div>
-              <div className="items__contact">
-                <HiMail className="icono" />
-                <a href="mailto:">cthevorschau@gmail.com</a>
+              <div className="footer__container__items--contact">
+                <HiMail className="footer__container__items--contact-icon footer__icon" />
+                <a href="mailto:thevorschau@gmail.com">thevorschau@gmail.com</a>
               </div>
-              <div className="items__contact">
-                <FaPhone className="icono" />
+              <div className="footer__container__items--contact">
+                <FaPhone className="footer__container__items--contact-icon footer__icon" />
                 <a href="tel:+">001-2233-456</a>
               </div>
           </div>
           <div className="footer__container__items">
-            <div className="items__categories">
+            <div className="footer__container__items--categories">
               <h3>Categories</h3>
               <ul>
                 {footerCategories.map((item: FooterCategories) => (
@@ -70,18 +70,18 @@ export default function Footer() {
           </div>
           <div className="footer__container__items">
             <h3>Newsletter Signup</h3>
-            <p className="text--form">Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers</p>
+            <p className="footer__container__items--text-form">Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers</p>
             <form>
               <input type="text" id="name" name="name" placeholder="Your email address"></input>
               <button className="btn btn__footer">Suscribete</button>
             </form>
           </div>
         </div>
-        <div className="icon">
-            <FaFacebookF className="icono"/> 
-            <FaInstagram className="icono"/>
-            <FaTwitter className="icono"/>
-            <FaPinterestP className="icono"/>
+        <div className="footer__icons">
+            <FaFacebookF className="footer__icons--icon footer__icon"/> 
+            <FaInstagram className="footer__icons--icon footer__icon"/>
+            <FaTwitter className="footer__icons--icon footer__icon"/>
+            <FaPinterestP className="footer__icons--icon footer__icon"/>
         </div>
       </footer>
     )
