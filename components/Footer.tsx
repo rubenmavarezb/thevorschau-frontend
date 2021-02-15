@@ -40,21 +40,21 @@ export default function Footer() {
 
 
     return (
-      <footer>
+      <footer className="footer">
         <div className="footer__container">
           <div className="footer__container__items">
               <h2><span>V</span>ORSHAU</h2>
               <div className="items__contact">
-                <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} size="2x"/></Link>
-                <p>345 Main Road, Florida, United States</p>
+                <FontAwesomeIcon className="icono" icon={faUser} />
+                <address>345 Main Road, Florida,<br /> United States</address>
               </div>
               <div className="items__contact">
-                <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} size="2x"/></Link>
-                <p>contact@vorshau.com</p>
+                <FontAwesomeIcon className="icono" icon={faUser} />
+                <a href="mailto:">contact@vorshau.com</a>
               </div>
               <div className="items__contact">
-                <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} size="2x"/></Link>
-                <p>+001-2233-456</p>
+                <FontAwesomeIcon className="icono" icon={faUser} />
+                <a href="tel:+">001-2233-456</a>
               </div>
           </div>
           <div className="footer__container__items">
