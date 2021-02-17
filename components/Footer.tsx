@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faUser, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import {FaFacebookF} from 'react-icons/fa';
+import {FaFacebookF, FaInstagram, FaTwitter, FaPinterestP, FaPhone} from 'react-icons/fa';
+import { HiMail } from "react-icons/hi";
+import { MdLocationOn } from "react-icons/md";
 
 interface FooterCategories {
   id: number;
@@ -15,51 +15,51 @@ export default function Footer() {
     {
       id: 1,
       category: 'Men',
-      href: '/login'
+      href: '/category/men'
     },
     {
       id: 2,
       category: 'Women',
-      href: '/login'
+      href: '/category/women'
     },
     {
       id: 3,
       category: 'Shoes',
-      href: '/login'
+      href: '/category/shoes'
     },
     {
       id: 4,
       category: 'Denim',
-      href: '/login'
+      href: '/category/denim'
     },
     {
       id: 5,
       category: 'Accesories',
-      href: '/login'
+      href: '/category/accesories'
     },
   ]
 
 
     return (
-      <footer>
+      <footer className="footer">
         <div className="footer__container">
           <div className="footer__container__items">
-              <h2><span>V</span>ORSHAU</h2>
-              <div className="items__contact">
-                <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} size="2x"/></Link>
-                <p>345 Main Road, Florida, United States</p>
+              <h2><span className="v">V</span>ORSCHAU</h2>
+              <div className="footer__container__items--contact">
+                <MdLocationOn className="footer__container__items--contact-icon footer__icon"/>
+                <address>345 Main Road, Florida,<br /> United States</address>
               </div>
-              <div className="items__contact">
-                <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} size="2x"/></Link>
-                <p>contact@vorshau.com</p>
+              <div className="footer__container__items--contact">
+                <HiMail className="footer__container__items--contact-icon footer__icon" />
+                <a href="mailto:thevorschau@gmail.com">thevorschau@gmail.com</a>
               </div>
-              <div className="items__contact">
-                <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} size="2x"/></Link>
-                <p>+001-2233-456</p>
+              <div className="footer__container__items--contact">
+                <FaPhone className="footer__container__items--contact-icon footer__icon" />
+                <a href="tel:+">001-2233-456</a>
               </div>
           </div>
           <div className="footer__container__items">
-            <div className="items__categories">
+            <div className="footer__container__items--categories">
               <h3>Categories</h3>
               <ul>
                 {footerCategories.map((item: FooterCategories) => (
@@ -70,19 +70,18 @@ export default function Footer() {
           </div>
           <div className="footer__container__items">
             <h3>Newsletter Signup</h3>
-            <p>Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers</p>
+            <p className="footer__container__items--text-form">Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers</p>
             <form>
-            <input type="text" id="name" name="name" placeholder="Your email address"></input>
-            <button className="btn btn__footer">Suscribete</button>
+              <input type="text" id="name" name="name" placeholder="Your email address"></input>
+              <button className="btn btn__footer">Suscribete</button>
             </form>
           </div>
         </div>
-        <div className="icon">
-            <FaFacebookF/> 
-            <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} /></Link>
-            <Link href="/login"><FontAwesomeIcon className="icono" icon={faHeart} /></Link>
-            <Link href="/login"><FontAwesomeIcon className="icono" icon={faShoppingCart} /></Link>
-            <Link href="/login"><FontAwesomeIcon className="icono" icon={faUser} /></Link>
+        <div className="footer__icons">
+            <FaFacebookF className="footer__icons--icon footer__icon"/> 
+            <FaInstagram className="footer__icons--icon footer__icon"/>
+            <FaTwitter className="footer__icons--icon footer__icon"/>
+            <FaPinterestP className="footer__icons--icon footer__icon"/>
         </div>
       </footer>
     )

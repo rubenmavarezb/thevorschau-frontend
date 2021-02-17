@@ -1,38 +1,44 @@
 .contenedor {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-  }
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
 
-  img {
-    max-width: 100%;
-  }
+img {
+  max-width: 100%;
+}
 
-  .text-center {
-    text-align: center;
-  }
-  
-  .no-margin {
-    margin: 0;
-  }
-  
-  .d-none {
-    display: none;
-  }
-  
-  .d-block {
-    display: block;
-  }
+.text-center {
+  text-align: center;
+}
 
-  .btn {
-    display: block;
-    background-color: $green;
-    border-radius: 10px;
-    width: 407px;
-    height: 132px;
-    color: $white;
-    font-size: 24px;
-    border: none;
-  }
+.no-margin {
+  margin: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.btn {
+  display: block;
+  background-color: $green;
+  border-radius: 10px;
+  width: 407px;
+  height: 132px;
+  color: $white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.v {
+  font-weight: 600;
+  color: $red;
+}
 
  

@@ -11,13 +11,27 @@
         width: 24rem;
     }
 
-    @media (min-width: $breakpoint-ipad) {
+    &__icons {
+        cursor: pointer;
+    }
+
+    // @media (min-width: $breakpoint-ipad) {
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     padding: 0 50px;
+    // }
+
+    // @media (min-width: $breakpoint-desktop) {
+    //     padding: 0 150px 0 100px;
+    // }
+
+    @include screen(ipad) {
         justify-content: space-between;
         align-items: center;
         padding: 0 50px;
     }
 
-    @media (min-width: $breakpoint-desktop) {
+    @include screen(desktop) {
         padding: 0 150px 0 100px;
     }
 }
