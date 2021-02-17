@@ -15,15 +15,15 @@
         cursor: pointer;
     }
 
-    // @media (min-width: $breakpoint-ipad) {
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     padding: 0 50px;
-    // }
+    &__title {
+        color: $black;
+        font-weight: 700;
+        text-decoration: none;
 
-    // @media (min-width: $breakpoint-desktop) {
-    //     padding: 0 150px 0 100px;
-    // }
+        &__red {
+            color: red;
+        }
+    }
 
     @include screen(ipad) {
         justify-content: space-between;

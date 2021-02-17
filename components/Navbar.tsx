@@ -33,7 +33,7 @@ export default function Navbar() {
           <div className="navbar__burgermenu">
             <i className="fas fa-bars"></i>
           </div>
-          <a href="" className="navbar__title">VORSHAU</a>
+          <a href="" className="navbar__title"> <span className="navbar__title__red">V</span>ORSHAU</a>
           <nav className="navbar__nav">
             <span className="navbar__icons"><FaSearch/></span>
             {navLinks.map((link:NavLinks) => (
