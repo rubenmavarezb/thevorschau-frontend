@@ -1,3 +1,4 @@
+
 export default function Hero() {
     return (
         <main>
@@ -6,10 +7,10 @@ export default function Hero() {
                     <div className="hero__container__text">
                         <h1>The voushar</h1>
                          <p>lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum</p>
-                         <button>shop now</button>
+                         <button className="btn btn-hero">shop now</button>
                     </div>
                     <div className="hero__container__img">
-                        <img src="" alt=""/>
+                     <img src="../public/img/hero-guy.png"  alt=""/>
                     </div>
                 </div>
             </div>

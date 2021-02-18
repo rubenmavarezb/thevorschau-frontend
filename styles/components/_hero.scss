@@ -1,0 +1,48 @@
+.hero {
+    background-color: $light-blue;
+    width: 100%;
+    height: 90%;
+    padding: 43px 31px 50px 54px;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            padding: 0 4rem;
+
+            h1 {
+                font-size: 10rem;
+                text-transform: uppercase;
+                line-height: 1;
+                letter-spacing: 12px;
+                color: $dark-blue;
+            }
+
+            p {
+                color: $grey-1;
+                padding: 2rem 0;
+                font-weight: 600;
+            }
+
+            .btn-hero {
+                width: 300px;
+                font-size: 4rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                height: 11rem;
+                margin-top: 3rem;
+            }
+
+        }
+
+        &__img {
+            width: 30%;
+        }
+
+    }
+}
