@@ -1,9 +1,10 @@
 .navbar {
-    background-color: transparent;
+    background-color:#EAF4FB;
     display: flex;
     flex-direction: row;
     height: 10vh;
-    position: relative;
+    position: fixed;
+    width: 100%;
 
     &__nav {
         display: flex;
