@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { IconType } from 'react-icons'
 import { FaSearch, FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa';
@@ -9,6 +10,23 @@ interface NavLinks {
 }
 
 export default function Navbar() {
+
+    const navbar = useRef<HTMLDivElement>(null);
+
+    const handleScroll = () => {
+      const navCur = navbar.current;
+      if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight){
+        if(null !== navCur) {
+          navCur.style.background = "#FFFFFF";
+          navCur.style.transition = "all .3s";
+        }
+      } else {
+        if(null !== navCur) {
+          navCur.style.background = "#EAF4FB";
+          navCur.style.transition = "all .3s";
+        }
+      }
+    }
 
     const navLinks: NavLinks[] = [
       {
@@ -28,8 +46,17 @@ export default function Navbar() {
       },
     ]
 
+
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      console.log('prueba')
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    }, [])
+
     return (
-      <div className="navbar">
+      <div className="navbar" ref={navbar}>
           <div className="navbar__burgermenu">
             <i className="fas fa-bars"></i>
           </div>
