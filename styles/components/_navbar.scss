@@ -14,11 +14,13 @@
 
     &__icons {
         cursor: pointer;
+        font-size: 2rem;
     }
 
     &__title {
         color: $black;
         font-weight: 700;
+        font-size: 2rem;
         text-decoration: none;
 
         &__red {
