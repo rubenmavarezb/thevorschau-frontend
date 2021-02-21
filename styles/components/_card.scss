@@ -6,17 +6,56 @@
 
 .card {
     width: 25%;
-    border: 1px solid black;
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    position: relative;
 
-        img {
-            z-index: 1;
-        }
 
         h1 {
-            z-index: 200;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100px;
+                border-bottom: .5rem solid $white;
+                margin: 0 auto;
+            }
         }
+        
+        h2 {
+            color: $white;
+            text-transform: uppercase;
+            padding-top: 2rem;
+        }
+
+}
+
+.card-1 {
+    width: 25%;
+    background-image: url('../../public/card-1.png');
+    height: 605px;
+}
+
+.card-2 {
+    width: 25%;
+    background-image: url('../../public/card-2.png');
+    height: 605px;
+}
+
+.card-3 {
+    width: 25%;
+    background-image: url('../../public/card-3.png');
+    height: 605px;
+}
+
+.card-4 {
+    width: 25%;
+    background-image: url('../../public/card-4.png');
+    height: 605px;
 }
