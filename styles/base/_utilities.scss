@@ -51,4 +51,25 @@ img {
   padding: 6rem 0;
 }
 
+.navbar-nav-scroll {
+  background:$white !important;
+  transition:all .3s;
+}
+
+.navbar-title-scroll {
+  width: 0;
+  opacity: 0;
+  transition: all .1s;
+}
+
+.navbar-parent-scroll {
+  justify-content: flex-end!important;
+}
+
+.navbar-v-scroll {
+  font-size: 5rem!important;
+  position:absolute;
+  margin-left: 4rem;
+  transition : all .5s;
+}
  
