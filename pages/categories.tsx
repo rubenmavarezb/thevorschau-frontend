@@ -3,7 +3,7 @@ import Paragraph from '../components/Paragraph';
 import Card from '../components/Card';
 
 interface Cards {
-  id:number
+  id: number
   img:string
   gender: string
   category:string
