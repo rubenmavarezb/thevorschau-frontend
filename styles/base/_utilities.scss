@@ -1,4 +1,4 @@
-.contenedor {
+.container {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
@@ -45,6 +45,10 @@ img {
 .v {
   font-weight: 600;
   color: $red;
+}
+
+.padding-top-bottom {
+  padding: 6rem 0;
 }
 
  

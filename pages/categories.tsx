@@ -1,9 +1,59 @@
-import Layout from '../components/Layout';
+import Heading from '../components/Heading';
+import Paragraph from '../components/Paragraph';
+import Card from '../components/Card';
+
+interface Cards {
+  id:number
+  img:string
+  gender: string
+  category:string
+}
 
 export default function Categories() {
+
+  const cards: Cards[] = [
+    {
+        id: 1,
+        img:"card card-1",
+        gender: "Men",
+        category:"clothes"
+    },
+    {
+        id: 2,
+        img:"card card-2",
+        gender: "Men",
+        category:"shoes"
+    },
+    {
+      id: 3,
+      img:"card card-3",
+      gender: "Women",
+      category:"clothes"
+    },
+    {
+        id: 4,
+        img:"card card-4",
+        gender: "Women",
+        category:"shoes"
+      }
+  ]
+
   return (
-    <Layout>
-      <h1 className="prueba">Categories</h1>
-    </Layout>
+    <div className="container padding-top-bottom">
+      <Heading
+      css="heading-headline"
+      text="shop by categories"/>
+      <Paragraph
+      css="paragraph-headline"
+      text="lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum"/>
+      <div className="card-categories padding-top-bottom">
+      {cards.map((card:Cards) => (
+          <Card
+          img={card.img}
+          gender={card.gender}
+          category={card.category}/>
+        ))}
+      </div>
+    </div>
   )
 }
