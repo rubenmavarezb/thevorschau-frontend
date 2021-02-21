@@ -41,22 +41,42 @@
     width: 25%;
     background-image: url('../../public/card-1.png');
     height: 605px;
+
+    &:hover {
+        background-image: url('../../public/blur-card1.png');
+    }
 }
 
 .card-2 {
     width: 25%;
     background-image: url('../../public/card-2.png');
     height: 605px;
+
+    &:hover {
+        background-image: url('../../public/blur-card2.png');
+        transition: all .7s;
+    }
 }
 
 .card-3 {
     width: 25%;
     background-image: url('../../public/card-3.png');
     height: 605px;
+
+    &:hover {
+        background-image: url('../../public/blur-card3.png');
+        transition: all .7s;
+    }
 }
 
 .card-4 {
     width: 25%;
     background-image: url('../../public/card-4.png');
     height: 605px;
+    
+
+    &:hover {
+        background-image: url('../../public/blur-card4.png');
+        transition: all .7s;
+    }
 }
