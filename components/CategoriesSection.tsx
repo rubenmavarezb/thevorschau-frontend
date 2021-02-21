@@ -49,9 +49,8 @@ export default function Categories() {
       <div className="card-categories padding-top-bottom">
       {cards.map((card:Cards) => (
           <Card
-          img={card.img}
-          gender={card.gender}
-          category={card.category}/>
+            card={card}
+          />
         ))}
       </div>
     </div>
