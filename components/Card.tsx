@@ -1,11 +1,16 @@
-interface Cards {
-    id:number
-    img:string
-    gender: string
-    category:string
+interface Card {
+    card: {
+      id:number
+      img:string
+      gender: string
+      category:string
+    }
   }
 
-export default function Card({img,gender,category}:Cards) {
+export default function Card({card}: Card) {
+  
+    const { img, gender, category } = card;
+
     return (
                <div className={img}>
                         <h1>{gender}</h1>
