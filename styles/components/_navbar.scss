@@ -5,6 +5,8 @@
     height: 10vh;
     position: fixed;
     width: 100%;
+    transition:all .3s;
+    z-index: 9999;
 
     &__nav {
         display: flex;
@@ -22,9 +24,18 @@
         font-weight: 700;
         font-size: 2rem;
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: initial;
+        position: relative;
+        width: 112.64px;
+        transition: all .5s;
 
         &__red {
+            justify-self: initial;
             color: red;
+            font-size: 2.5rem;
+            transition: all .5s;
         }
     }
 
