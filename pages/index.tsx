@@ -9,8 +9,7 @@ export default function Home() {
       <Hero/>
       <Banner h2={`50%`} p={`discount`}/>
       <Categories/>
-      <Banner h2={`Get 2
-       and 1`} p={`free`}/>
+      <Banner h2={`Get 2 and 1`} p={`free`}/>
     </Layout>
   )
 }
