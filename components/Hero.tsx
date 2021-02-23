@@ -5,7 +5,7 @@ export default function Hero() {
             <div className="hero">
                 <div className="hero__container">
                     <div className="hero__container-text">
-                        <h1>The vorschau</h1>
+                        <h1>The <span className="v">v</span>orschau</h1>
                          <p>lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum</p>
                          <button className="btn btn-hero">shop now</button>
                     </div>
