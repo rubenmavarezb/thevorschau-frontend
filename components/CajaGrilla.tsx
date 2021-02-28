@@ -52,12 +52,12 @@ export default function CajaGrilla() {
                 css="paragraph-headline"
                 text="lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum"/>
             <div className="grilla">
-                {grillaCategory.map((grilla: GrillaCategory) => {
+                {grillaCategory.map((grilla: GrillaCategory) => (
                     <div className="grilla__card--grilla" >
                         <p>hola</p>
-                        <img src={`../public/${grilla.img}`} alt={grilla.category} />
+                        <img src={`/${grilla.img}`} alt={grilla.category} />
                     </div>
-                })}
+                ))}
             </div>
         </div>
     )
