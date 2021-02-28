@@ -6,39 +6,54 @@ export default function CajaGrilla() {
     interface GrillaCategory {
         id: number,
         category: string,
-        img: String
+        img: String,
+        text: string,
+        price: number
     }
 
     const grillaCategory: GrillaCategory[] = [
         {
             id: 1,
             category: "Mas vendido",
-            img: "card-2.png"
+            img: "card-1.png",
+            text: "Nike blue sport sneakers",
+            price: 60,
+
         },
         {
             id: 2,
             category: "Mas vendido",
-            img: "card-2.png"
+            img: "card-2.png",
+            text: "Line long sleeve shirt",
+            price: 15,
         },
         {
             id: 3,
             category: "Mas vendido",
-            img: "card-2.png"
+            img: "card-3.png",
+            text: "Squared white grey pants",
+            price: 25,
         },
         {
             id: 4,
             category: "Mas vendido",
-            img: "card-2.png"
+            img: "card-4.png",
+            text: "Jean mom black",
+            price: 30,
         },
         {
             id: 5,
             category: "Mas vendido",
-            img: "card-2.png"
+            img: "card-1.png",
+            text: "Adidas superstar white",
+            price: 80,
         },
         {
             id: 6,
             category: "Mas vendido",
-            img: "card-2.png"
+            img: "card-2.png",
+            text: "Magic poison shirt",
+            price: 13,
         }
     ]
 
@@ -54,8 +69,13 @@ export default function CajaGrilla() {
             <div className="grilla">
                 {grillaCategory.map((grilla: GrillaCategory) => (
                     <div className="grilla__card--grilla" >
-                        <p>hola</p>
-                        <img src={`/${grilla.img}`} alt={grilla.category} />
+                        <div className="image-grilla">
+                            <img src={`/${grilla.img}`} alt={grilla.category} />
+                        </div>
+                        <div className="text-grilla">
+                            <p>{grilla.text}</p>
+                            <p>${grilla.price}.00</p>
+                        </div>
                     </div>
                 ))}
             </div>
