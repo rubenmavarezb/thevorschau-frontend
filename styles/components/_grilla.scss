@@ -1,0 +1,49 @@
+.componente-grilla {
+    display: flex;
+    flex-direction: column;
+    margin: 78px auto 94px auto;
+
+    .grilla{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 114px;
+        
+
+        &__card--grilla{
+            flex: 0 0 calc(30% - 0rem);
+            width: 100%;
+            height: 455px;
+            text-align: center;
+            border: 1px solid $grey-1;
+
+            .image-grilla {
+                width: 269px;
+                margin: 48px auto 30px auto;
+                
+                img {
+                    height: 211px;
+                }
+            }
+
+            .text-grilla {
+                margin-bottom: 56px;
+            }
+
+            .text-grilla p:nth-child(1) {
+                color:$black;
+                font-size: 24px;
+                font-family: 'Ramabhadra';
+            }
+
+            .text-grilla p:nth-child(2) {
+                color:$grey-1;
+                font-size: 24px;
+                font-family: 'Ramabhadra';
+            }
+        }
+    }
+}
+
+
+
