@@ -1,17 +1,17 @@
-import Heading from './Heading';
-import Paragraph from './Paragraph';
-
-interface GridCategory {
-    id: number;
-    category: string;
-    img: string;
-    text: string;
-    price: number;
-}
+import Heading from '../components/Heading';
+import Paragraph from '../components/Paragraph';
 
 export default function CajaGrilla() {
 
-    const gridCategory: GridCategory[] = [
+    interface GrillaCategory {
+        id: number,
+        category: string,
+        img: String,
+        text: string,
+        price: number
+    }
+
+    const grillaCategory: GrillaCategory[] = [
         {
             id: 1,
             category: "Mas vendido",
@@ -67,10 +67,15 @@ export default function CajaGrilla() {
                 css="paragraph-headline"
                 text="lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum"/>
             <div className="grilla">
-                {gridCategory.map((grid: GridCategory) => (
-                    <div className="grilla__card--grilla" key={grid.id}>
-                        <p>hola</p>
-                        <img src={`/${grid.img}`} alt={grid.category} />
+                {grillaCategory.map((grilla: GrillaCategory) => (
+                    <div className="grilla__card--grilla" >
+                        <div className="image-grilla">
+                            <img src={`/${grilla.img}`} alt={grilla.category} />
+                        </div>
+                        <div className="text-grilla">
+                            <p>{grilla.text}</p>
+                            <p>${grilla.price}.00</p>
+                        </div>
                     </div>
                 ))}
             </div>
