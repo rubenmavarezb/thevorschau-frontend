@@ -41,7 +41,7 @@
 
         .card-product {
             flex: 0 0 calc(33% - 1rem);
-            width: 100%;
+            max-width: 365px;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -53,7 +53,7 @@
 
             .card-product__img {
                 background-color: #F3F3F3;
-                width: 365px;
+                width: 340px;
                 height: 300px;
                 display: flex;
                 align-items: center;
