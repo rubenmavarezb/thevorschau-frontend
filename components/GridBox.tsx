@@ -1,9 +1,9 @@
 import Heading from '../components/Heading';
 import Paragraph from '../components/Paragraph';
 
-export default function CajaGrilla() {
+export default function GridBox() {
 
-    interface GrillaCategory {
+    interface GridCategory {
         id: number,
         category: string,
         img: String,
@@ -11,7 +11,7 @@ export default function CajaGrilla() {
         price: number
     }
 
-    const grillaCategory: GrillaCategory[] = [
+    const gridCategory: GridCategory[] = [
         {
             id: 1,
             category: "Mas vendido",
@@ -67,14 +67,14 @@ export default function CajaGrilla() {
                 css="paragraph-headline"
                 text="lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum"/>
             <div className="grilla">
-                {grillaCategory.map((grilla: GrillaCategory) => (
+                {gridCategory.map((grid: GridCategory) => (
                     <div className="grilla__card--grilla" >
                         <div className="image-grilla">
-                            <img src={`/${grilla.img}`} alt={grilla.category} />
+                            <img src={`/${grid.img}`} alt={grid.category} />
                         </div>
                         <div className="text-grilla">
-                            <p>{grilla.text}</p>
-                            <p>${grilla.price}.00</p>
+                            <p>{grid.text}</p>
+                            <p>${grid.price}.00</p>
                         </div>
                     </div>
                 ))}
