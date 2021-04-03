@@ -3,6 +3,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    @media (max-width: $breakpoint-mid) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .card {
@@ -14,6 +19,15 @@
     align-items: center;
     position: relative;
     cursor: pointer;
+
+    @media (max-width: $breakpoint-mid) {
+        width: 50%;
+        margin: 2rem 0;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        width: 85%;
+    }
 
 
         h1 {
@@ -39,9 +53,9 @@
 }
 
 .card-1 {
-    width: 25%;
     background-image: url('../../public/card-1.png');
     height: 605px;
+    background-position-x: center;
 
     &:hover {
         background-image: url('../../public/blur-card1.png');
@@ -50,9 +64,9 @@
 }
 
 .card-2 {
-    width: 25%;
     background-image: url('../../public/card-2.png');
     height: 605px;
+    background-position-x: center;
 
     &:hover {
         background-image: url('../../public/blur-card2.png');
@@ -61,9 +75,9 @@
 }
 
 .card-3 {
-    width: 25%;
     background-image: url('../../public/card-3.png');
     height: 605px;
+    background-position-x: center;
 
     &:hover {
         background-image: url('../../public/blur-card3.png');
@@ -72,9 +86,9 @@
 }
 
 .card-4 {
-    width: 25%;
     background-image: url('../../public/card-4.png');
     height: 605px;
+    background-position-x: center;
     
 
     &:hover {

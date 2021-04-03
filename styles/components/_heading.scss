@@ -14,6 +14,9 @@
             text-align: center;
             font-size: 5rem;
         }
+        @media (max-width: $breakpoint-ipad) {
+            font-size: 6rem;
+        }
     }
 
 }
