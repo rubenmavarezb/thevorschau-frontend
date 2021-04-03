@@ -8,6 +8,13 @@
         color: $green;
         text-transform: uppercase;
         font-size: 7rem;
+
+        @media (max-width: $breakpoint-mobile) {
+            line-height: 1.2;
+            text-align: center;
+            font-size: 5rem;
+        }
     }
+
 }
 
