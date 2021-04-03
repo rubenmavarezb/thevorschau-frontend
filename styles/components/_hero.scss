@@ -4,18 +4,42 @@
     height: 90%;
     padding: 135px 31px 50px 54px;
 
+    @media (max-width: $breakpoint-mobile) {
+        padding: 135px 30px 50px 30px;
+    }
+
     &__container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 15rem;
+        padding: 0 11rem;
+
+        @media (max-width: $breakpoint-desktop) {
+            padding: 0 8rem;
+        }
+
+        @media (max-width: $breakpoint-mid) {
+            flex-direction: column;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            padding: 0;
+        }
 
         &-text {
             display: flex;
             flex-direction: column;
-            width: 40%;
+            width: 45%;
             padding: 0 4rem;
+
+            @media (max-width: $breakpoint-mid) {
+                width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+
+
 
             h1 {
                 font-size: 10rem;
@@ -23,12 +47,24 @@
                 line-height: 1;
                 letter-spacing: 12px;
                 color: $dark-blue;
+
+                @media (max-width: $breakpoint-desktop) {
+                    font-size: 8rem;
+                }
+
+                @media (max-width: $breakpoint-mobile) {
+                    font-size: 5rem;
+                }
             }
 
             p {
                 color: $grey-1;
                 padding: 2rem 0;
                 font-weight: 600;
+
+                @media (max-width: $breakpoint-desktop) {
+                    padding: 2rem 2rem;
+                }
             }
 
             .btn-hero {
@@ -44,6 +80,10 @@
 
         &-img {
             width: 45%;
+
+            @media (max-width: $breakpoint-mid) {
+                display: none;
+            }
         }
 
     }
