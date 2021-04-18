@@ -146,12 +146,16 @@
         padding: 0;
         height: auto;
 
+
         h2:not(.v) {
             text-align: center;
         }
 
         &__container {
             flex-direction: column;
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
 
             
             h3 {
