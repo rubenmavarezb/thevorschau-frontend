@@ -72,4 +72,11 @@ img {
   margin-left: 4rem;
   transition : all .5s;
 }
+
+@include screen(phone){
+  .navbar-v-scroll {
+    margin-left:0;
+  }
+}
+
  

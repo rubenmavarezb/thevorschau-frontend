@@ -138,4 +138,132 @@
             margin-right: 27px;
         }
     }
+
 }
+
+@include screen(phone){
+    .footer {
+        padding: 0;
+        height: auto;
+
+        h2:not(.v) {
+            text-align: center;
+        }
+
+        &__container {
+            flex-direction: column;
+
+            
+            h3 {
+                font-size: 18px;
+                margin: 0;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+
+            form {
+                width: 345px;
+                height: 50px;
+
+                .btn__footer {
+                    font-size: 18px;
+                    width: 120px;
+                    height: 35px;
+                    top: 16%;
+                }
+
+                input {
+                    width: 350px;
+                    height: 50px;
+                    font-size: 16px;
+                }
+
+                #name {
+                    padding: 25px;
+                }
+                
+            }
+
+            &__items {
+                width: 100%;
+                margin-bottom: 20px;
+
+                &--categories {
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+    
+                        li {
+                            flex: 0 0 calc(36% - 1rem);
+
+                            a {
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: $grey-1;
+                                text-decoration: none;
+                            }
+
+                        }
+                    }
+                }
+
+                &--contact {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 0 24px 0;
+    
+                    a{
+                        font-size: 16px;
+                        color: $grey-1;
+                        text-decoration: none;
+                    }
+                    
+                    address {
+                        font-size: 16px;
+                        color: $grey-1;
+                        text-decoration: none;
+                        line-height: 1.2;
+                    }
+    
+                    &-icon {
+                        font-size: 24px;
+                        margin-right: 26px;
+                    }
+    
+                    &:last-of-type {
+                        margin: 0;
+                    }
+    
+                    
+                }
+
+                &--text-form {
+                    line-height: 1.2;
+                    margin-top: 16px;
+                    margin-bottom: 18px;
+                }
+            }
+        }
+        
+        &__icons {
+            margin-top: 0;
+            text-align: center;
+
+            &--icon {
+                font-size: 24px;
+
+                &:nth-child(4){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+}
+
+

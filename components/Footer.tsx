@@ -42,7 +42,7 @@ export default function Footer() {
 
     return (
       <footer className="footer">
-        <div className="footer__container">
+        <div className="footer__container container">
           <div className="footer__container__items">
               <h2><span className="v">V</span>ORSCHAU</h2>
               <div className="footer__container__items--contact">
